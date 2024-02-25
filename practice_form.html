@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
 </head>
+
 <body>
-    <form action="https://www.google.com/search?q=appale&oq">
-        <input type="text" name="q" placeholder="Search in google">
-        <button>Search</button>
+    <form action="/server">
+        <div>
+            <h3>Registration Form</h3>
+        </div>
+
+        <div>
+            <input type="text" placeholder="First Name" name="fname" />
+            <input type="text" placeholder="Last Name" name="lname" />
+        </div>
+        <br />
+        <div>
+            <label for="gender">Please select gender</label>
+            <select name="gender" id="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </div>
+        <br />
+        <div>
+            Do you agree to all terms of service?
+            <input type="checkbox" name="check" id="ok" />
+            <label for="ok">Yes, I agree</label>
+        </div>
+        <br />
+        <div>
+            <button>Register</button>
+        </div>
     </form>
 </body>
+
 </html>
